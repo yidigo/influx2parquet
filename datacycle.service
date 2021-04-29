@@ -1,0 +1,13 @@
+[Unit]
+Description=data to parquet daemon
+After=syslog.target  network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=
+Restart= always
+RestartSec=1min
+
+[Install]
+WantedBy=multi-user.target
